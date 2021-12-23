@@ -1,0 +1,56 @@
+body
+{
+    background-size: cover;
+}
+.heading
+{
+width: 100%;
+text-align: left;
+}
+.heading h3
+{
+    display: inline;
+}
+
+.heading button
+{
+    float: right;
+    border: 1px solid white;
+}
+.image
+{
+    width: 100%;
+}
+#start,#status,#restart
+{
+    font-size: 22px;
+}
+body
+{
+    text-align: center;
+}
+.modal-dialog
+{
+    width: 70%;
+}     
+.modal-body
+{
+    text-align: left;
+    font-size: 20px;
+}
+.copyright_footer
+{
+    position: fixed;
+    background-color: gray;
+    color: white;
+    width:100%;
+    line-height:3;
+    bottom:0;
+    text-align: center;
+}
+canvas
+{
+    margin-top: 30px;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 10px;
+}
