@@ -1,6 +1,3 @@
-
-/*created by prashant shukla */
-
 var paddle2 =10,paddle1=10;
 
 var paddle1X = 10,paddle1Height = 110;
@@ -25,6 +22,7 @@ rightWristY = 0;
 rightWristX = 0;
 scoreRightWrist = 0;
 
+game_status = "";
 
 function setup(){
 var canvas =  createCanvas(700,600);
@@ -54,8 +52,14 @@ function gotPoses(results)
   }
 }
 
-function draw()
+function startGame()
 {
+  game_status = "start";
+  document.getElementById("status").innerHTML = "Game is Loaded";
+}
+
+function draw(){
+if(game_status == "start")
 {
   background(0); 
   image(video, 0, 0, 700, 600);
@@ -203,4 +207,7 @@ function paddleInCanvas(){
   if(paddle1Y < 0){
     paddle1Y =0;
   }
+ 
+  
 }
+
